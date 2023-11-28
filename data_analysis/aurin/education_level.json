@@ -1,0 +1,41 @@
+
+{   
+    
+    "VIC_level": [
+        {"key":"male_certificate_level", "data":164071},
+        {"key":"male_bachelor", "data":45455},
+        {"key":"male_graduate", "data":7883},
+        {"key":"male_inadequately", "data":3231},
+        {"key":"male_postgraduate", "data":11878},
+        {"key":"male_diploma", "data":39014},
+        {"key":"male_not_stated", "data":66141},
+        {"key":"male_total", "data":337677},
+        {"key":"female_certificate_level", "data":94335},
+        {"key":"female_bachelor", "data":74426},
+        {"key":"female_graduate", "data":16687},
+        {"key":"female_inadequately", "data":3927},
+        {"key":"female_postgraduate", "data":13870},
+        {"key":"female_diploma", "data":60587},
+        {"key":"female_not_stated", "data":69980},
+        {"key":"female_total", "data":333815}
+    ],
+    
+    "MEL_level": [
+        {"key":"male_certificate_level", "data":353062},
+        {"key":"male_bachelor", "data":306975},
+        {"key":"male_graduate", "data":33627},
+        {"key":"male_inadequately", "data":13765},
+        {"key":"male_postgraduate", "data":117203},
+        {"key":"male_diploma", "data":152216},
+        {"key":"male_not_stated", "data":146257},
+        {"key":"male_total", "data":1123109},
+        {"key":"female_certificate_level", "data":206028},
+        {"key":"female_bachelor", "data":370617},
+        {"key":"female_graduate", "data":60941},
+        {"key":"female_inadequately", "data":15833},
+        {"key":"female_postgraduate", "data":116849},
+        {"key":"female_diploma", "data":194798},
+        {"key":"female_not_stated", "data":161790},
+        {"key":"female_total", "data":1126854}
+    ]
+}

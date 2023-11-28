@@ -1,0 +1,24 @@
+
+---
+- name: connect tweepy and couchdb
+  become:
+    yes
+  template:
+    src: db_info.ini.j2
+    dest: '/home/ubuntu/COMP90024_Ass2/crawler/db_info.ini'
+
+
+- name: Stop server
+  become:
+    yes
+  shell: docker-compose down --rmi local
+  args:
+    chdir: /home/ubuntu/COMP90024_Ass2/crawler
+
+
+- name: Start server
+  become:
+    yes
+  shell: docker-compose up  --build -d
+  args:
+    chdir: /home/ubuntu/COMP90024_Ass2/crawler

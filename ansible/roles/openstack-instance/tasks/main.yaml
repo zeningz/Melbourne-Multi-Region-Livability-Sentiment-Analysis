@@ -1,0 +1,54 @@
+---
+# Create an instance on NeCTAR
+- name: Create an instance
+  os_server:
+    name: '{{ item.name }}'
+    image: '{{ instance_image }}'
+    key_name: '{{ instance_key_name }}'
+    flavor: '{{ instance_flavor }}'
+    availability_zone: '{{ availability_zone }}'
+    security_groups: '{{ sg_names }}'
+    volumes: '{{ item.volumes }}'
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  loop: '{{ instances }}'
+  register: os_instance
+
+- ansible.builtin.debug:
+    msg: "Instance {{ item.openstack.name }} has been created. IP address is {{ item.openstack.public_v4 }}"
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+
+
+- name: Wait for connection
+  wait_for:
+    host: "{{ item.openstack.public_v4 }}"
+    port: 22
+    timeout: 120
+    search_regex: OpenSSH
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+# Add hosts to Ansible in-memory inventory
+- name: Add host
+  add_host:
+    name: '{{ item.openstack.public_v4 }}'
+    groups: instances
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+- name: Create host file
+  copy:
+    content: "[CouchDBMaster]\n{{ groups['instances'][0] }}\n\n[CouchDBSlave]\n{{ 
+      groups['instances'][1] }}\n{{ groups['instances'][2] }}\n\n[FrontBackEnd]\n{{ groups['instances'][3] }}\n"
+    dest: "{{ hosts_file_path }}"
+
+- name: Assign ipv4 address
+  lineinfile:
+    line: "{{ item.openstack.public_v4 }}\n"
+    dest: "{{ hosts_file_absolute_path }}"
+  loop: '{{ item.openstack.public_v4 }}'
+  when: item.openstack is defined

@@ -1,0 +1,184 @@
+{
+    "organisation": "AU_Govt_ABS_Census",
+    "name": "gccsa_g46a_non_scl_qual_lvl_of_edu_by_age_by_sex_census_2016",
+    "title": "GCCSA-G46a Non-School Qualification-Level of Education by Age by Sex-Census 2016",
+    "legal": {
+        "attribution": "{datasource.organisationTitle}, ({dataset.attributionYear}): {dataset.title}; accessed from AURIN on {dateOfAccess}.",
+        "attributionYear": "2017",
+        "clickthrough": false,
+        "copyrightNotice": "&copy; {datasource.organisationTitle} {dataset.copyrightYear}",
+        "copyrightYear": "2017",
+        "licenceType": "Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)"
+    },
+    "referenceSystemIdentifier": "urn:x-ogc:def:crs:EPSG:4283",
+    "geoLevel": "gccsa_2016",
+    "key": "gcc_code16",
+    "keyRegex": null,
+    "availability": "true",
+    "geomField": "wkb_geometry",
+    "keyword": "census,2016,gcp,general community profile,education,qualification,age,sex,g46a,non-school",
+    "theme": null,
+    "temporalExtent": {
+        "beginDate": "2016-08-09T00:00:00",
+        "endDate": "2016-08-11T00:00:00",
+        "selectTime": false
+    },
+    "type": "dataset",
+    "_id": "dataset-AU_Govt_ABS_Census-gccsa_g46a_non_scl_qual_lvl_of_edu_by_age_by_sex_census_2016-gccsa_2016",
+    "bbox": [
+        96.82,
+        -43.74,
+        159.11,
+        -9.14
+    ],
+    "abstract": "GCCSA based data for Non-School Qualification: Level of Education by Age by Sex, in General Community Profile (GCP), 2016 Census. Count of persons aged 15 years and over with a qualification. Excludes persons with a qualification out of the scope of the Australian Standard Classification of Education (ASCED). Excludes schooling up to year 12. G46 is broken up into two sections (G46a-G46b), this section contains 'Males Postgraduate Degree Level Age 15 24 years' - 'Persons Postgraduate Degree Level Age 25-34 years'. The data is by GCCSA 2016 boundaries. Periodicity: 5-Yearly. <br/> \nNote: There are small random adjustments made to all cell values to protect the confidentiality of data. These adjustments may cause the sum of rows or columns to differ by small amounts from table totals.<br/> \nFor more information visit the data source: <a href=http://www.abs.gov.au/census>http://www.abs.gov.au/census</a>.\n",
+    "selectedAttributes": [
+        {
+            "name": "gcc_code16",
+            "type": "String",
+            "title": "GCCSA Code 2016",
+            "description": "GCCSA Code 2016.",
+            "stype": "nominal",
+            "isDimension": false
+        },
+        {
+            "name": "f_advdip_and_dip_total",
+            "type": "Integer",
+            "title": "Females Advanced Diploma and Diploma Level Total",
+            "description": "Females Advanced Diploma and Diploma Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_bachdeg_total",
+            "type": "Integer",
+            "title": "Females Bachelor Degree Level Total",
+            "description": "Females Bachelor Degree Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_cert_lev_tot_total",
+            "type": "Integer",
+            "title": "Females Certificate Level Total Total",
+            "description": "Females Certificate Level Total Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_graddip_and_gradcert_total",
+            "type": "Integer",
+            "title": "Females Graduate Diploma and Graduate Certificate Level Total",
+            "description": "Females Graduate Diploma and Graduate Certificate Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_lev_edu_ns_total",
+            "type": "Integer",
+            "title": "Females Level of education not stated Total",
+            "description": "Females Level of education not stated Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_pgrad_deg_total",
+            "type": "Integer",
+            "title": "Females Postgraduate Degree Level Total",
+            "description": "Females Postgraduate Degree Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_tot_total",
+            "type": "Integer",
+            "title": "Females Total Total",
+            "description": "Females Total Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_advdip_and_dip_total",
+            "type": "Integer",
+            "title": "Males Advanced Diploma and Diploma Level Total",
+            "description": "Males Advanced Diploma and Diploma Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_bachdeg_total",
+            "type": "Integer",
+            "title": "Males Bachelor Degree Level Total",
+            "description": "Males Bachelor Degree Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_cert_lev_tot_total",
+            "type": "Integer",
+            "title": "Males Certificate Level Total Total",
+            "description": "Males Certificate Level Total Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_lev_edu_ides_total",
+            "type": "Integer",
+            "title": "Males Level of education inadequately described Total",
+            "description": "Males Level of education inadequately described Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_graddip_and_gradcert_total",
+            "type": "Integer",
+            "title": "Males Graduate Diploma and Graduate Certificate Level Total",
+            "description": "Males Graduate Diploma and Graduate Certificate Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_lev_edu_ns_total",
+            "type": "Integer",
+            "title": "Males Level of education not stated Total",
+            "description": "Males Level of education not stated Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_pgrad_deg_total",
+            "type": "Integer",
+            "title": "Males Postgraduate Degree Level Total",
+            "description": "Males Postgraduate Degree Level Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "m_tot_total",
+            "type": "Integer",
+            "title": "Males Total Total",
+            "description": "Males Total Total.",
+            "stype": "ratio",
+            "isDimension": false
+        },
+        {
+            "name": "f_lev_edu_ides_total",
+            "type": "Integer",
+            "title": "Females Level of education inadequately described Total",
+            "description": "Females Level of education inadequately described Total.",
+            "stype": "ratio",
+            "isDimension": false
+        }
+    ],
+    "filter": {
+        "filterType": "tabular",
+        "spatial": {
+            "bbox": [
+                144.86722650462,
+                -37.854977131717,
+                145.03916590993,
+                -37.694751431798
+            ]
+        }
+    }
+}

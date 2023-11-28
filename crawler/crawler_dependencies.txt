@@ -1,0 +1,4 @@
+couchdb
+tweepy
+datetime
+schedule

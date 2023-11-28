@@ -1,0 +1,19 @@
+{
+    "melbourne_city":
+    {"languages" :["en"], 
+        "track":["restaurant","cuisine","education","student","university","graduation","school","tuition","rent","house","apartment"],  
+        "locations":[144.913581,-37.839086,144.994266,-37.781922]
+    },
+
+    "melbourne_kew":
+    {"languages" :["en"], 
+    "track":["restaurant","cuisine","education","student","university","graduation","school","tuition","rent","house","apartment"],
+    "locations":[144.999392,-37.855040,145.141140,-37.786685]
+    },
+
+    "Hoppers_Crossing":
+    {"languages" :["en"], 
+    "track":["restaurant","cuisine","education","student","university","graduation","school","tuition","rent","house","apartment"],
+    "locations":[144.633666,-37.974500,144.913581,-37.694900]
+    }
+}

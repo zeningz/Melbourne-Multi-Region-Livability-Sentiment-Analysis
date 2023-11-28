@@ -1,0 +1,57 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        140.961681996,
+        -39.159189528,
+        149.976290995,
+        -33.980425587
+    ],
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "f_advdip_and_dip_total": 60587,
+                "m_cert_lev_tot_total": 164071,
+                "m_bachdeg_total": 45455,
+                "m_graddip_and_gradcert_total": 7883,
+                "m_lev_edu_ns_total": 66141,
+                "f_lev_edu_ns_total": 69980,
+                "m_pgrad_deg_total": 11878,
+                "f_bachdeg_total": 74426,
+                "f_cert_lev_tot_total": 94335,
+                "f_graddip_and_gradcert_total": 16687,
+                "m_advdip_and_dip_total": 39014,
+                "f_lev_edu_ides_total": 3927,
+                "gcc_code16": "2RVIC",
+                "m_lev_edu_ides_total": 3231,
+                "f_pgrad_deg_total": 13870,
+                "m_tot_total": 337677,
+                "f_tot_total": 333815
+            },
+            "id": "gccsa_g46a_non_scl_qual_lvl_of_edu_by_age_by_sex_census_2016.fid-13603162_180bbf7858c_191e"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "f_advdip_and_dip_total": 194798,
+                "m_cert_lev_tot_total": 353062,
+                "m_bachdeg_total": 306975,
+                "m_graddip_and_gradcert_total": 33627,
+                "m_lev_edu_ns_total": 146257,
+                "f_lev_edu_ns_total": 161790,
+                "m_pgrad_deg_total": 117203,
+                "f_bachdeg_total": 370617,
+                "f_cert_lev_tot_total": 206028,
+                "f_graddip_and_gradcert_total": 60941,
+                "m_advdip_and_dip_total": 152216,
+                "f_lev_edu_ides_total": 15833,
+                "gcc_code16": "2GMEL",
+                "m_lev_edu_ides_total": 13765,
+                "f_pgrad_deg_total": 116849,
+                "m_tot_total": 1123109,
+                "f_tot_total": 1126854
+            },
+            "id": "gccsa_g46a_non_scl_qual_lvl_of_edu_by_age_by_sex_census_2016.fid-13603162_180bbf7858c_191f"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+---
+
+# Initialise couchdb cluster with three nodes
+- name: Initialise couchdb cluster with three nodes
+  uri:
+    url: http://{{ couchdb_master }}:5984/_cluster_setup
+    method: POST
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_password }}"
+    force_basic_auth: yes
+    status_code: 200, 201
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body: "{\"action\": \"enable_cluster\", \"bind_address\": \"0.0.0.0\", \"username\":\"{{ couchdb_user }}\", \"password\": \"{{ couchdb_password }}\", \"port\": \"5984\", \"remote_node\": \"{{ item }}\", \"node_count\": \"3\",\"remote_current_user\": \"{{ couchdb_user }}\", \"remote_current_password\":\"{{ couchdb_password }}\"}"
+  loop: "{{ groups['CouchDBSlave'] }}"
+
+# Connect three nodes together
+- name: Connect three nodes together
+  uri:
+    url: http://{{ couchdb_master }}:5984/_cluster_setup
+    method: POST
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_password }}"
+    force_basic_auth: yes
+    status_code: 200, 201, 409
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body: "{\"action\":\"add_node\",\"host\":\"{{ item }}\",\"port\":\"5984\",\"username\":\"{{ couchdb_user }}\",\"password\":\"{{ couchdb_password }}\"}"
+  loop: "{{ groups['CouchDBSlave'] }}"
+
+#  ignore error 
+- name: ignore error 
+  uri:
+    url: http://{{ couchdb_master }}:5984/
+    method: GET
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_password }}"
+    force_basic_auth: yes
+  run_once: true
+
+# Finish cluster
+- name: Finish cluster
+  become: yes
+  uri:
+    url: http://{{ couchdb_master }}:5984/_cluster_setup
+    method: POST
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_password }}"
+    force_basic_auth: yes
+    return_content: yes
+    headers:
+      Content-Type: "application/json"
+    status_code: 200, 201
+    body_format: json
+    body: "{\"action\":\"finish_cluster\"}"    

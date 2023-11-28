@@ -1,0 +1,176 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        0,
+        0,
+        -1,
+        -1
+    ],
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 20224976,
+                "gcc_code16": "1GSYD",
+                "value_new_oth_resial_building_aud000": 11869529,
+                "value_new_houses_aud000": 6342767.5,
+                "gcc_name16": "Greater Sydney"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.1GSYD"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 6004923,
+                "gcc_code16": "1RNSW",
+                "value_new_oth_resial_building_aud000": 1618383.8,
+                "value_new_houses_aud000": 3698832.2,
+                "gcc_name16": "Rest of NSW"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.1RNSW"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 23041026,
+                "gcc_code16": "2GMEL",
+                "value_new_oth_resial_building_aud000": 10914212,
+                "value_new_houses_aud000": 9893940,
+                "gcc_name16": "Greater Melbourne"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.2GMEL"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 4387101,
+                "gcc_code16": "2RVIC",
+                "value_new_oth_resial_building_aud000": 381596.4,
+                "value_new_houses_aud000": 3451318.2,
+                "gcc_name16": "Rest of Vic."
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.2RVIC"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 8000279.5,
+                "gcc_code16": "3GBRI",
+                "value_new_oth_resial_building_aud000": 3001496.2,
+                "value_new_houses_aud000": 4125473,
+                "gcc_name16": "Greater Brisbane"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.3GBRI"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 5822188,
+                "gcc_code16": "3RQLD",
+                "value_new_oth_resial_building_aud000": 1607320.6,
+                "value_new_houses_aud000": 3527058.8,
+                "gcc_name16": "Rest of Qld"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.3RQLD"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 3144296,
+                "gcc_code16": "4GADE",
+                "value_new_oth_resial_building_aud000": 1094980.9,
+                "value_new_houses_aud000": 1702742.8,
+                "gcc_name16": "Greater Adelaide"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.4GADE"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 520272.1,
+                "gcc_code16": "4RSAU",
+                "value_new_oth_resial_building_aud000": 6001.2,
+                "value_new_houses_aud000": 427007.6,
+                "gcc_name16": "Rest of SA"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.4RSAU"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 4901092.5,
+                "gcc_code16": "5GPER",
+                "value_new_oth_resial_building_aud000": 1369682,
+                "value_new_houses_aud000": 3096916.8,
+                "gcc_name16": "Greater Perth"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.5GPER"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 937409.2,
+                "gcc_code16": "5RWAU",
+                "value_new_oth_resial_building_aud000": 34569.1,
+                "value_new_houses_aud000": 751919.1,
+                "gcc_name16": "Rest of WA"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.5RWAU"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 432515.6,
+                "gcc_code16": "6GHOB",
+                "value_new_oth_resial_building_aud000": 65840,
+                "value_new_houses_aud000": 303043.6,
+                "gcc_name16": "Greater Hobart"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.6GHOB"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 419012.3,
+                "gcc_code16": "6RTAS",
+                "value_new_oth_resial_building_aud000": 26104.6,
+                "value_new_houses_aud000": 339685,
+                "gcc_name16": "Rest of Tas."
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.6RTAS"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 241586.6,
+                "gcc_code16": "7GDAR",
+                "value_new_oth_resial_building_aud000": 14654.4,
+                "value_new_houses_aud000": 154496.6,
+                "gcc_name16": "Greater Darwin"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.7GDAR"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 126058.7,
+                "gcc_code16": "7RNTE",
+                "value_new_oth_resial_building_aud000": 38273.8,
+                "value_new_houses_aud000": 56913.7,
+                "gcc_name16": "Rest of NT"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.7RNTE"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "value_tot_resial_building_aud000": 1740205.8,
+                "gcc_code16": "8ACTE",
+                "value_new_oth_resial_building_aud000": 1199815.2,
+                "value_new_houses_aud000": 441638.7,
+                "gcc_name16": "Australian Capital Territory"
+            },
+            "id": "abs_building_approvals_gccsa_2017_18.8ACTE"
+        }
+    ]
+}

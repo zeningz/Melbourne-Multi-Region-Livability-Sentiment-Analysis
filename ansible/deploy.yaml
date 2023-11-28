@@ -1,0 +1,64 @@
+---
+- hosts: all
+  vars_files:
+    - host_vars/nectar.yaml
+  vars:
+    - ansible_user: ubuntu
+    - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+    - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  roles:
+    - role: git-pull
+
+
+# - hosts: CouchDB*
+#   vars_files:
+#     - host_vars/nectar.yaml
+#   vars:
+#     - ansible_user: ubuntu
+#     - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+#     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+#   roles:
+#     - role: couchdb-setup
+
+# - hosts: CouchDBMaster
+#   vars_files:
+#     - host_vars/nectar.yaml
+#   vars:
+#     - ansible_user: ubuntu
+#     - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+#     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+#   roles:
+    #- role: couchdb-cluster-setup
+    #- role: crawler-setup
+
+# - hosts: Analysis
+#   vars_files:
+#     - host_vars/nectar.yaml
+#   vars:
+#     - ansible_user: ubuntu
+#     - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+#     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+#   roles:
+#     - role: analysis-setup
+
+# - hosts: BackEnd
+#   vars_files:
+#     - host_vars/nectar.yaml
+#   vars:
+#     - ansible_user: ubuntu
+#     - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+#     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+#   roles:
+#     - role: backend-setup
+#     - role: map_reduce_setup
+
+
+- hosts: FrontEnd
+  vars_files:
+    - host_vars/nectar.yaml
+  vars:
+    - ansible_user: ubuntu
+    - ansible_ssh_private_key_file: "{{ ssh_private_key_path }}"
+    - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  roles:
+    - role: frontend-setup

@@ -1,0 +1,40 @@
+---
+# copy private key to remote
+- name: copy private key to remote
+  copy:
+    src: "{{ github_key_path }}"
+    dest: /home/ubuntu/.ssh/yanbeij_key
+    owner: ubuntu
+    group: ubuntu
+    mode: 0600
+
+# configure github ssh
+- name: configure github ssh
+  template:
+    src: "./github_config"
+    dest: /home/ubuntu/.ssh/config
+    owner: ubuntu
+    group: ubuntu
+    mode: 0644
+
+git clone 
+- name: git clone
+  git:
+    repo: git@github.com:Yanbei-Jiang/COMP90024_Ass2.git
+    key_file: /home/ubuntu/.ssh/github_key
+    dest: '/home/ubuntu/COMP90024_Ass2'
+
+- name: Creates directory
+  file:
+    path: /home/ubuntu/COMP90024_Ass2
+    state: directory
+
+- name: pull clone
+  shell: git clone git@github.com:Yanbei-Jiang/COMP90024_Ass2.git #--config core.sshCommand="ssh -i /home/ubuntu/.ssh/yanbeij_key"
+  args:
+    chdir: /home/ubuntu/COMP90024_Ass2
+  git:
+    repo: https://github.com/Yanbei-Jiang/COMP90024_Ass2.git
+    dest: /home/ubuntu/COMP90024_Ass2
+    clone: yes
+    update: yes

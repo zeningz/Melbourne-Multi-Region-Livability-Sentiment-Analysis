@@ -1,0 +1,19 @@
+{
+    "Melbourne_city":
+    {"languages" :"en", 
+        "track":"restaurant OR cuisine OR education OR student OR university OR graduation OR school OR tuition OR rent OR house OR apartment",  
+        "locations":"-37.815041,144.964979,5km"
+    },
+
+    "glen_east_melbourne":
+    {"languages" :"en", 
+    "track":"restaurant OR cuisine OR education OR student OR university OR graduation OR school OR tuition OR rent OR house OR apartment",  
+    "locations":"-37.87439,145.16680,17km"
+    },
+
+    "Balliang_west_melbourne":
+    {"languages" :"en", 
+    "track":"restaurant OR cuisine OR education OR student OR university OR graduation OR school OR tuition OR rent OR house OR apartment", 
+    "locations":"-37.846392,144.369279,45km"
+    }
+}
